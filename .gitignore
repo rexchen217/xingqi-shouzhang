@@ -1,0 +1,22 @@
+# 构建 / 打包中间产物
+_pkg-unsigned.apk
+_pkg-aligned.apk
+_pkg-signed.apk
+_pkg-signed.apk.idsig
+_chk.js
+
+# 打包产物不入库：APK 统一走 GitHub Releases 发布
+*.apk
+
+# 本地工具链（JDK 17 + Android build-tools，体积大且需自行准备）
+_toolchain/
+
+# 开发用预览与本地缓存
+.trae-html-share-packages/
+theme_previews/
+ui-preview/
+node_modules/
+
+# 系统垃圾
+Thumbs.db
+.DS_Store
